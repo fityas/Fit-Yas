@@ -1,80 +1,70 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fit Yas</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f0;
-      color: #2f3e46;
-    }
-    header {
-      background-color: #cad2c5;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-    }
-    footer {
-      background-color: #84a98c;
-      padding: 1rem;
-      text-align: center;
-      color: white;
-    }
-    input, textarea, button {
-      width: 100%;
-      max-width: 400px;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #52796f;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Bienvenida a Fit Yas</h1>
-    <p>Nutrición y bienestar personalizados</p>
-  </header>
-  <section>
-    <h2>Nutrición personalizada</h2>
-    <p>Planes adaptados a tus objetivos y estilo de vida.</p>
-  </section>
-  <section>
-    <h2>Servicios</h2>
-    <p>Consulta online, seguimiento y recursos descargables.</p>
-  </section>
-  <section>
-    <h2>Recetas saludables</h2>
-    <p>Inspiración para comer rico y cuidarte.</p>
-  </section>
-  <section>
-    <h2>Sobre mí</h2>
-    <p>Hola, soy Yasmin, dietista y entrenadora. Te acompaño en tu camino saludable.</p>
-  </section>
-  <section>
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xqkrzdkb" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-      <textarea name="message" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-  <footer>
-    Sígueme en Instagram: @fityas
-  </footer>
-</body>
-</html>
+// FitYasPage.jsx
+
+export default function FitYasPage() {
+  return (
+    <main className="min-h-screen bg-white text-[#3c2a2a]">
+      {/* Hero */}
+      <section className="bg-[#ffeef1] p-8 text-center rounded-b-2xl shadow-md">
+        <h1 className="text-4xl font-bold mb-4">Bienvenida a Fit Yas</h1>
+        <p className="text-lg">Nutrición y entrenamiento para mujeres que buscan equilibrio, fuerza y bienestar.</p>
+      </section>
+
+      {/* Nutrición personalizada */}
+      <section className="p-8 bg-white">
+        <h2 className="text-2xl font-semibold mb-4">Nutrición Personalizada</h2>
+        <p className="mb-2">Planes alimenticios adaptados a tus necesidades, metas y estilo de vida.</p>
+        <p className="text-[#cc6f8a] font-medium">100% online, flexible y enfocado en ti.</p>
+      </section>
+
+      {/* Servicios */}
+      <section className="p-8 bg-[#fff7f9] rounded-xl shadow-sm m-4">
+        <h2 className="text-2xl font-semibold mb-4">Servicios</h2>
+        <ul className="space-y-2">
+          <li>🍓 Asesorías 1:1 en nutrición y entrenamiento</li>
+          <li>🍓 Planes de entrenamiento para mujeres</li>
+          <li>🍓 Recetas saludables y fáciles</li>
+        </ul>
+      </section>
+
+      {/* Recetas saludables */}
+      <section className="p-8 bg-white">
+        <h2 className="text-2xl font-semibold mb-4">Recetas Saludables</h2>
+        <p>Ideas visuales, fáciles y nutritivas para que disfrutes comer mientras cuidas de ti.</p>
+      </section>
+
+      {/* Sobre mí */}
+      <section className="p-8 bg-[#ffeef1] rounded-xl shadow-sm m-4">
+        <h2 className="text-2xl font-semibold mb-4">Sobre Mí</h2>
+        <p>Soy Yas, dietista apasionada por el entrenamiento con pesas, la comida rica y el bienestar femenino.</p>
+      </section>
+
+      {/* Contacto */}
+      <section className="p-8 bg-white">
+        <h2 className="text-2xl font-semibold mb-4">Contacto</h2>
+        <form className="space-y-4 max-w-md mx-auto">
+          <input
+            type="text"
+            placeholder="Nombre"
+            className="w-full border rounded-xl p-2 border-[#f7c7d1]"
+          />
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            className="w-full border rounded-xl p-2 border-[#f7c7d1]"
+          />
+          <textarea
+            placeholder="Tu mensaje"
+            className="w-full border rounded-xl p-2 border-[#f7c7d1]"
+            rows={4}
+          />
+          <button
+            type="submit"
+            className="bg-[#f7c7d1] text-white px-4 py-2 rounded-xl hover:bg-[#f4a9bb] transition"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+  );
+}
