@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fit Yas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f8f9f8;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #d4edda;
+      color: #1e4620;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #4f7942;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #4f7942;
+      font-weight: bold;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #4f7942;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3b5e31;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fit Yas</h1>
+    <p>Nutrición personalizada y bienestar integral</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy Yasmin, nutricionista y entrenadora. Ayudo a mujeres a mejorar su salud y composición corporal con planes adaptados, realistas y sostenibles. Por ahora ofrezco asesorías de nutrición personalizadas, ¡y pronto también entrenamiento!
+      </p>
+    </section>
+
+    <section>
+      <h2>Contacto directo</h2>
+      <div class="contact-links">
+        <a href="mailto:tuemail@example.com">Email</a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank">Instagram</a>
+        <a href="https://wa.me/34xxxxxxxxx" target="_blank">WhatsApp</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="mailto:tuemail@example.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="Nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="Email" required />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="Mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fit Yas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
